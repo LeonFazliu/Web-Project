@@ -33,6 +33,7 @@ a {
 .nav .logo {
   font-size: 22px;
   font-weight: 500;
+  
 }
 .nav .nav-links {
   column-gap: 20px;
@@ -154,25 +155,32 @@ color: #0077b6;
   height: 200px;
   width: 200px;
   object-fit: contain;
+  
 }
 .SuggestedParagraph{
   display: flex;
   margin-left: 2rem;
   color: #0077b6;
   font-weight: bold;
+  
 
 }
 .footermain{
   display: flex;
 justify-content: space-between;
+border-style: solid;
+border-color: #0077b6;
+border-radius: 10px;
 }
 .footerleft{
+  margin-left: 2rem;
   
 }
 .footercenter{
-  
-  
+  font-weight: bold;
+  color: #0077b6;
 }
+
 .footerright{
 height: 100%;
 width: 45%;  
@@ -180,7 +188,10 @@ justify-content: center;
 align-items: center;
 
 }
-
+.videosdesc1{
+  height: 19rem;
+  margin-top: 0.3rem;
+}
 /* responsive */
 @media screen and (max-width: 1160px) {
   .nav {

@@ -89,6 +89,7 @@ a {
 }
 .Container{
     margin-top: 5rem;
+    margin-bottom: 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -115,6 +116,8 @@ a {
   align-content: space-evenly;
   margin-bottom: 3rem;
 }
+
+
 .Movies{
   height: 300px;
   width: 200px;

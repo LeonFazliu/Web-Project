@@ -90,7 +90,7 @@ a {
 
 .Container{
     margin-top: 5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -99,16 +99,17 @@ a {
     align-content: space-evenly;
 }
 .Container2{
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
   align-content: space-evenly;
+  
 }
 .Container3{
-  margin-top: 5rem;
+  margin-top: 2rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

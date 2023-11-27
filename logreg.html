@@ -2,53 +2,97 @@
 <html lang="en">
 
 <head>
-
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Login & Signup</title>
-    <link rel="stylesheet" href="logreg.css" />
-  </head>
-  <body>
-    <section class="wrapper">
-      <div class="form signup">
-        <header>Signup</header>
-        <form action="#">
-          <input type="text" placeholder="Full name" required />
-          <input type="text" placeholder="Email address" required />
-          <input type="password" placeholder="Password required" />
-          <div class="checkbox">
-            <input type="checkbox" id="signupCheck" />
-            <label for="signupCheck">I accept all terms & condition</label>
-          </div>
-          <input type="submit" value="Signup" />
-        </form>
-      </div>
+  <link rel="stylesheet" href="logreg.css" />
+</head>
 
-      <div class="form login">
-        <header>Login</header>
-        <form action="#">
-          <input type="text" placeholder="Email address" required />
-          <input type="password" placeholder="Password" required />
-          <input type="submit" value="Login" />
-        </form>
-      </div>
+<body>
+  <section class="wrapper">
+    <div class="form signup">
+      <header>Signup</header>
+      <form onsubmit="return validateSignupForm()">
+        <input type="text" id="fullName" placeholder="Full name" required />
+        <input type="text" id="signupEmail" placeholder="Email address" required />
+        <input type="password" id="signupPassword" placeholder="Password required" required />
+        <div class="checkbox">
+          <input type="checkbox" id="signupCheck" required />
+          <label for="signupCheck">I accept all terms & condition</label>
+        </div>
+        <input type="submit" value="Signup" />
+      </form>
+    </div>
 
-      <script>
-        const wrapper = document.querySelector(".wrapper"),
-          signupHeader = document.querySelector(".signup header"),
-          loginHeader = document.querySelector(".login header");
+    <div class="form login">
+      <header>Login</header>
+      <form onsubmit="return validateLoginForm()">
+        <input type="text" id="loginEmail" placeholder="Email address" required />
+        <input type="password" id="loginPassword" placeholder="Password" required />
+        <input type="submit" value="Login" />
+      </form>
+    </div>
 
-        loginHeader.addEventListener("click", () => {
-          wrapper.classList.add("active");
-        });
-        signupHeader.addEventListener("click", () => {
-          wrapper.classList.remove("active");
-        });
+    <script>
+      const wrapper = document.querySelector(".wrapper"),
+        signupHeader = document.querySelector(".signup header"),
+        loginHeader = document.querySelector(".login header");
+
+      loginHeader.addEventListener("click", () => {
+        wrapper.classList.add("active");
+      });
+      signupHeader.addEventListener("click", () => {
+        wrapper.classList.remove("active");
+      });
+
+      function validateSignupForm() {
+        var fullName = document.getElementById('fullName').value;
+        var signupEmail = document.getElementById('signupEmail').value;
+        var signupPassword = document.getElementById('signupPassword').value;
+        var signupCheck = document.getElementById('signupCheck').checked;
+
         
-      </script>
-    </section>
-  </body>
-</html>
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(signupEmail)) {
+          alert('Please enter a valid email address.');
+          return false;
+        }
 
-  
+        if (signupPassword.length < 8 || !/[A-Z]/.test(signupPassword)) {
+          alert('Password must be at least 8 characters long and have a capital letter.');
+          return false;
+        }
+
+        
+        window.location.href = 'Main.html';
+
+        
+        return false;
+      }
+
+      function validateLoginForm() {
+        var loginEmail = document.getElementById('loginEmail').value;
+        var loginPassword = document.getElementById('loginPassword').value;
+
+        
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(loginEmail)) {
+          alert('Please enter a valid email address.');
+          return false;
+        }
+        if (loginPassword.length < 8 || !/[A-Z]/.test(loginPassword)) {
+          alert('Wrong Password.');
+          return false;
+        }
+
+        window.location.href = 'Main.html';
+
+        
+        return false;
+      }
+    </script>
+  </section>
+</body>
+
+</html>

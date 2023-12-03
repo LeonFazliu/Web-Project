@@ -69,8 +69,9 @@
         var signupEmail = document.getElementById('signupEmail').value;
         var signupPassword = document.getElementById('signupPassword').value;
         var signupCheck = document.getElementById('signupCheck').checked;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.(com|net|org)$/;
 
-        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
 
         if (!/^[A-Z]/.test(fullName)) {
           displayErrorMessage('The first letter of the full name must be a capital letter.', 'fullNameError');

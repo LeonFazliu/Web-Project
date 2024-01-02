@@ -19,15 +19,15 @@
     <body>
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="Main.html" class="logo">Movies24Online</a>
+      <a href="Main.php" class="logo">Movies24Online</a>
 
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
-        <li><a href="Action.html">Action</a></li>
-        <li><a href="Horror.html">Horror</a></li>
-        <li><a href="Comedy.html">Comedy</a></li>
-        <li><a href="Drama.html">Drama</a></li>
-        <li><a href="Fantasy.html">Fantasy</a></li>
+        <li><a href="Action.php">Action</a></li>
+        <li><a href="Horror.php">Horror</a></li>
+        <li><a href="Comedy.php">Comedy</a></li>
+        <li><a href="Drama.php">Drama</a></li>
+        <li><a href="Fantasy.php">Fantasy</a></li>
         
         
       </ul>
@@ -48,70 +48,70 @@
               <div class="product-image">
                   <span class="discount-tag">8.5</span>
                   <img src="Halloween.jfif" class="product-thumb" alt="">
-                  <a href="Halloween.html"><button class="card-btn">Watch now</button></a>
+                  <a href="Halloween.php"><button class="card-btn">Watch now</button></a>
               </div>             
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">8.0</span>
                   <img src="Dumbanddumber.jfif" class="product-thumb" alt="">
-                  <a href="DumbandDumber.html"><button class="card-btn">Watch now</button></a>
+                  <a href="DumbandDumber.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">9.0</span>
                   <img src="Avengers.jpg" class="product-thumb" alt="">
-                  <a href="AvengersEndGame.html"><button class="card-btn">Watch now</button></a>
+                  <a href="AvengersEndGame.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">7.0</span>
                   <img src="Barbie.jpg" class="product-thumb" alt="">
-                  <a href="Barbie.html"><button class="card-btn">Watch now</button></a>
+                  <a href="Barbie.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">8.3</span>
                   <img src="Spider-Man-_Across_the_Spider-Verse_poster.jpg" class="product-thumb" alt="">
-                  <a href="Spider-Man-_Across_the_Spider-Verse_poster.jpg"><button class="card-btn">Watch now</button></a>
+                  <a href="Spiderman.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">10</span>
                   <img src="Scream6.jpg" class="product-thumb" alt="">
-                  <a href="Scream6.html"><button class="card-btn">Watch now</button></a>
+                  <a href="Scream6.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">8.7</span>
                   <img src="JW3.jpg" class="product-thumb" alt="">
-                  <a href="Johnwick3.html"><button class="card-btn">Watch now</button></a>
+                  <a href="Johnwick3.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">5.2</span>
                   <img src="leo.jpg" class="product-thumb" alt="">
-                  <a href="leo.html"><button class="card-btn">Watch now</button></a>
+                  <a href="leo.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">8.4</span>
                   <img src="Titanic.jpg" class="product-thumb" alt="">
-                  <a href="Titanic.html"><button class="card-btn">Watch now</button></a>
+                  <a href="Titanic.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
           <div class="product-card">
               <div class="product-image">
                   <span class="discount-tag">7.5</span>
                   <img src="TheBabyboss2.jpg" class="product-thumb" alt="">
-                  <a href="TheBabyBoss2.html"><button class="card-btn">Watch now</button></a>
+                  <a href="TheBabyBoss2.php"><button class="card-btn">Watch now</button></a>
               </div>
           </div>
       </div>
@@ -119,74 +119,74 @@
     <div class="Container-mainpage1">
 
       <div class="moviehover">  
-        <a href="Spiderman.html"><img class="Movies" src="Spider-Man-_Across_the_Spider-Verse_poster.jpg" alt=""></a>
-        <a href="Spiderman.html"><p class="Moviesdesc">Spider-Man</p></a>
+        <a href="Spiderman.php"><img class="Movies" src="Spider-Man-_Across_the_Spider-Verse_poster.jpg" alt=""></a>
+        <a href="Spiderman.php"><p class="Moviesdesc">Spider-Man</p></a>
       </div>
       <div class="moviehover">
-        <a href="Halloween.html"><img class="Movies" src="Halloween.jfif" alt=""></a>
-        <a href="Halloween.html"><p class="Moviesdesc">Halloween</p></a>
+        <a href="Halloween.php"><img class="Movies" src="Halloween.jfif" alt=""></a>
+        <a href="Halloween.php"><p class="Moviesdesc">Halloween</p></a>
       </div>
       <div class="moviehover">
-        <a href="DumbandDumber.html"><img class="Movies" src="Dumbanddumber.jfif" alt=""></a>
-        <a href="DumandDumber.html"><p class="Moviesdesc">Dumb and Dumber</p></a>
+        <a href="DumbandDumber.php"><img class="Movies" src="Dumbanddumber.jfif" alt=""></a>
+        <a href="DumandDumber.php"><p class="Moviesdesc">Dumb and Dumber</p></a>
       </div>
       <div class="moviehover">
-        <a href="Titanic.html"><img class="Movies" src="Titanic.jpg" alt=""></a>
-        <a href="Titanic.html"><p class="Moviesdesc">Titanic</p></a>
+        <a href="Titanic.php"><img class="Movies" src="Titanic.jpg" alt=""></a>
+        <a href="Titanic.php"><p class="Moviesdesc">Titanic</p></a>
       </div>
       <div class="moviehover">
-        <a href="AvengersEndGame.html"><img class="Movies" src="Avengers.jpg" alt=""></a>
-        <a href="AvengersEndGame.html"><p class="Moviesdesc">Avengers End Game</p></a>
+        <a href="AvengersEndGame.php"><img class="Movies" src="Avengers.jpg" alt=""></a>
+        <a href="AvengersEndGame.php"><p class="Moviesdesc">Avengers End Game</p></a>
       </div>
     
     </div>
     <div class="Container2">
       <div class="moviehover">
-        <a href="JohnWick3.html"><img class="Movies" src="JW3.jpg" alt=""></a>
-        <a href="Johnwick3.html"><p class="Moviesdesc">John Wick 3</p></a>
+        <a href="JohnWick3.php"><img class="Movies" src="JW3.jpg" alt=""></a>
+        <a href="Johnwick3.php"><p class="Moviesdesc">John Wick 3</p></a>
       </div>
       <div class="moviehover">
-        <a href="JohnWick4.html"><img class="Movies" src="JW4.jpg" alt=""></a>
-        <a href="JohnWick4.html"><p class="Moviesdesc">John Wick 4</p></a>
+        <a href="JohnWick4.php"><img class="Movies" src="JW4.jpg" alt=""></a>
+        <a href="JohnWick4.php"><p class="Moviesdesc">John Wick 4</p></a>
       </div>
       <div class="moviehover">
-        <a href="Anabelle.html"><img class="Movies" src="Anabelle.jpg" alt=""></a>
-        <a href="Anabelle.html"><p class="Moviesdesc">Anabelle</p></a>
+        <a href="Anabelle.php"><img class="Movies" src="Anabelle.jpg" alt=""></a>
+        <a href="Anabelle.php"><p class="Moviesdesc">Anabelle</p></a>
       </div>
       <div class="moviehover">
-        <a href="Moonlight.html"><img class="Movies" src="Moonlights.jfif" alt=""></a>
-          <a href="Moonlight.html"><p class="Moviesdesc">MoonLight</p></a>
+        <a href="Moonlight.php"><img class="Movies" src="Moonlights.jfif" alt=""></a>
+          <a href="Moonlight.php"><p class="Moviesdesc">MoonLight</p></a>
         </div>
       <div class="moviehover">
-        <a href="PinkPanther.html"><img class="Movies" src="PP.jpg"></a>
-        <a href="PinkPanther.html"><p class="Moviesdesc">Pink Panther</p></a>
+        <a href="PinkPanther.php"><img class="Movies" src="PP.jpg"></a>
+        <a href="PinkPanther.php"><p class="Moviesdesc">Pink Panther</p></a>
       </div>
     </div>
     <div class="Container3">
 
       <div class="moviehover">
-        <a href="XmenApocalypse.html"><img class="Movies" src="XmenApocalypse.jpg" alt=""></a>
-        <a href="XmenApocalypse.html"><p class="Moviesdesc" >X-Men Apocalypse</p></a>
+        <a href="XmenApocalypse.php"><img class="Movies" src="XmenApocalypse.jpg" alt=""></a>
+        <a href="XmenApocalypse.php"><p class="Moviesdesc" >X-Men Apocalypse</p></a>
       </div>
 
       <div class="moviehover">
-        <a href="TexasChainsaw.html"><img src="TexasCh.jfif" class="Movies" alt=""></a>
-        <a href="TexasChainsaw.html"><p class="Moviesdesc">Texas Chainsaw 3D</p></a>
+        <a href="TexasChainsaw.php"><img src="TexasCh.jfif" class="Movies" alt=""></a>
+        <a href="TexasChainsaw.php"><p class="Moviesdesc">Texas Chainsaw 3D</p></a>
       </div>
 
       <div class="moviehover">
-        <a href="Barbie.html"><img src="Barbie.jpg" class="Movies" alt=""></a>
-        <a href="Barbie.html"><p class="Moviesdesc">Barbie</p></a>
+        <a href="Barbie.php"><img src="Barbie.jpg" class="Movies" alt=""></a>
+        <a href="Barbie.php"><p class="Moviesdesc">Barbie</p></a>
       </div>
 
       <div class="moviehover">
-        <a href="TheEqualizer3.html"><img src="The Equalizer.jpg" class="Movies" alt=""></a>
-        <a href="TheEqualizer3.html"><p class="Moviesdesc">The Equalizer 3</p></a>
+        <a href="TheEqualizer3.php"><img src="The Equalizer.jpg" class="Movies" alt=""></a>
+        <a href="TheEqualizer3.php"><p class="Moviesdesc">The Equalizer 3</p></a>
       </div>
       
       <div class="moviehover">
-        <a href="FNAF.html"><img src="fnaf.jpg" class="Movies" alt=""></a>
-        <a href="FNAF.html"><p class="Moviesdesc">Five Nights at Freddy's</p></a>
+        <a href="FNAF.php"><img src="fnaf.jpg" class="Movies" alt=""></a>
+        <a href="FNAF.php"><p class="Moviesdesc">Five Nights at Freddy's</p></a>
       </div>
 
     </div>
@@ -197,9 +197,9 @@
            <span class="fas fa-angle-left"></span>
            Previous</a>
         </li>
-        <li><a href="Main.html">1</a></li>
-        <li><a href="Main2.html">2</a></li>
-        <li class="icon"><a href="Main2.html">
+        <li><a href="Main.php">1</a></li>
+        <li><a href="Main2.php">2</a></li>
+        <li class="icon"><a href="Main2.php">
            Next<span class="fas fa-angle-right"></span>
            </a>
         </li>

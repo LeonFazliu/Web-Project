@@ -13,15 +13,15 @@
   <body>
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="Main.html" class="logo">Movies24Online</a>
+      <a href="Main.php" class="logo">Movies24Online</a>
 
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
-        <li><a href="Action.html">Action</a></li>
-        <li><a href="Horror.html">Horror</a></li>
-        <li><a href="Comedy.html">Comedy</a></li>
-        <li><a href="Drama.html">Drama</a></li>
-        <li><a href="Fantasy.html">Fantasy</a></li>
+        <li><a href="Action.php">Action</a></li>
+        <li><a href="Horror.php">Horror</a></li>
+        <li><a href="Comedy.php">Comedy</a></li>
+        <li><a href="Drama.php">Drama</a></li>
+        <li><a href="Fantasy.php">Fantasy</a></li>
       </ul>
 
       <i class="uil uil-search search-icon" id="searchIcon"></i>
@@ -33,48 +33,48 @@
     <div class="Container">
 
       <div class="moviehover">
-        <a href="Barbie.html"><img src="Barbie.jpg" class="Movies" alt=""></a>
-        <a href="Barbie.html"><p class="Moviesdesc">Barbie</p></a>
+        <a href="Barbie.php"><img src="Barbie.jpg" class="Movies" alt=""></a>
+        <a href="Barbie.php"><p class="Moviesdesc">Barbie</p></a>
       </div>
 
         <div class="moviehover">
-         <a href="PinkPanther.html"><img class="Movies" src="PP.jpg"></a>
-         <a href="PinkPanther.html"><p class="Moviesdesc">Pink Panther</p></a>
+         <a href="PinkPanther.php"><img class="Movies" src="PP.jpg"></a>
+         <a href="PinkPanther.php"><p class="Moviesdesc">Pink Panther</p></a>
         </div>
 
         <div class="moviehover">
-         <a href="DumbandDumber.html"><img class="Movies" src="Dumbanddumber.jfif" alt=""></a>
-         <a href="DumandDumber.html"><p class="Moviesdesc">Dumb and Dumber</p></a>
+         <a href="DumbandDumber.php"><img class="Movies" src="Dumbanddumber.jfif" alt=""></a>
+         <a href="DumandDumber.php"><p class="Moviesdesc">Dumb and Dumber</p></a>
         </div>
         <div class="moviehover">  
-          <a href="leo.html"><img class="Movies" src="leo.jpg" alt=""></a>
-          <a href="leo.html"><p class="Moviesdesc">Leo</p></a>
+          <a href="leo.php"><img class="Movies" src="leo.jpg" alt=""></a>
+          <a href="leo.php"><p class="Moviesdesc">Leo</p></a>
         </div>
         <div class="moviehover">
-          <a href="Gb.html"><img class="Movies" src="ghostbusters.jpg" alt=""></a>
-          <a href="Gb.html"><p class="Moviesdesc">Ghostbusters</p></a>
+          <a href="Gb.php"><img class="Movies" src="ghostbusters.jpg" alt=""></a>
+          <a href="Gb.php"><p class="Moviesdesc">Ghostbusters</p></a>
         </div>
     </div>
         <div class="Container2">
 
         <div class="moviehover">
-          <a href="Bridesmaids.html"><img class="Movies" src="Bridemaids.jpg" alt=""></a>
-          <a href="Bridesmaids.html"><p class="Moviesdesc">Bridesmaids</p></a>
+          <a href="Bridesmaids.php"><img class="Movies" src="Bridemaids.jpg" alt=""></a>
+          <a href="Bridesmaids.php"><p class="Moviesdesc">Bridesmaids</p></a>
         </div>
 
           <div class="moviehover">
-            <a href="Snatch.html"><img class="Movies" src="Snatch.jpg" alt=""></a>
-            <a href="Snatch.html"><p class="Moviesdesc">Snatch</p></a>
+            <a href="Snatch.php"><img class="Movies" src="Snatch.jpg" alt=""></a>
+            <a href="Snatch.php"><p class="Moviesdesc">Snatch</p></a>
           </div>
           
           <div class="moviehover">
-           <a href="Mask.html"><img class="Movies" src="Mask.jpg" alt=""></a>
-          <a href="Mask.html"><p class="Moviesdesc" >Mask</p></a>
+           <a href="Mask.php"><img class="Movies" src="Mask.jpg" alt=""></a>
+          <a href="Mask.php"><p class="Moviesdesc" >Mask</p></a>
           </div>
 
           <div class="moviehover">
-          <a href="JohnnyEnglish.html"><img src="JohnnyEnglish.jpg" class="Movies" alt=""></a>
-          <a href="JohnnyEnglish.html"><p class="Moviesdesc">Johnny English Reborn</p></a>
+          <a href="JohnnyEnglish.php"><img src="JohnnyEnglish.jpg" class="Movies" alt=""></a>
+          <a href="JohnnyEnglish.php"><p class="Moviesdesc">Johnny English Reborn</p></a>
           </div>
 
         

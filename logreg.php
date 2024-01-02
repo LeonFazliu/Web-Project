@@ -88,7 +88,7 @@
           return false;
         }
       
-        window.location.href = 'Main.html';
+        window.location.href = 'Main.php';
 
         return false;
       }
@@ -112,7 +112,7 @@
         }
 
         
-        window.location.href = 'Main.html';
+        window.location.href = 'Main.php';
 
         return false;
       }

@@ -13,15 +13,15 @@
   <body>
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="Main.html" class="logo">Movies24Online</a>
+      <a href="Main.php" class="logo">Movies24Online</a>
 
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
-        <li><a href="Action.html">Action</a></li>
-        <li><a href="Horror.html">Horror</a></li>
-        <li><a href="Comedy.html">Comedy</a></li>
-        <li><a href="Drama.html">Drama</a></li>
-        <li><a href="Fantasy.html">Fantasy</a></li>
+        <li><a href="Action.php">Action</a></li>
+        <li><a href="Horror.php">Horror</a></li>
+        <li><a href="Comedy.php">Comedy</a></li>
+        <li><a href="Drama.php">Drama</a></li>
+        <li><a href="Fantasy.php">Fantasy</a></li>
       </ul>
 
       <i class="uil uil-search search-icon" id="searchIcon"></i>
@@ -32,31 +32,31 @@
     </nav>
     <div class="Container">
       <div class="moviehover">
-        <a href="Scream6.html"><img class="Movies" src="Scream6.jpg" alt=""></a>
-        <a href="Scream6.html"><p class="Moviesdesc">Scream VI</p></a>
+        <a href="Scream6.php"><img class="Movies" src="Scream6.jpg" alt=""></a>
+        <a href="Scream6.php"><p class="Moviesdesc">Scream VI</p></a>
       </div>
       <div class="moviehover">
-        <a href="TheNun.html"><img class="Movies" src="TheNun.jpg" alt=""></a>
-        <a href="TheNun.html"><p class="Moviesdesc">The Nun</p></a>
+        <a href="TheNun.php"><img class="Movies" src="TheNun.jpg" alt=""></a>
+        <a href="TheNun.php"><p class="Moviesdesc">The Nun</p></a>
       </div>
       <div class="moviehover">
-        <a href="TexasChainsaw.html"><img src="TexasCh.jfif" class="Movies" alt=""></a>
-        <a href="TexasChainsaw.html"><p class="Moviesdesc">Texas Chainsaw 3D</p></a>
+        <a href="TexasChainsaw.php"><img src="TexasCh.jfif" class="Movies" alt=""></a>
+        <a href="TexasChainsaw.php"><p class="Moviesdesc">Texas Chainsaw 3D</p></a>
       </div>
 
       <div class="moviehover">
-          <a href="Anabelle.html"><img class="Movies" src="Anabelle.jpg" alt=""></a>
-          <a href="Anabelle.html"><p class="Moviesdesc">Anabelle</p></a>
+          <a href="Anabelle.php"><img class="Movies" src="Anabelle.jpg" alt=""></a>
+          <a href="Anabelle.php"><p class="Moviesdesc">Anabelle</p></a>
       </div>
 
         <div class="moviehover">
-          <a href="FNAF.html"><img src="fnaf.jpg" class="Movies" alt=""></a>
-        <a href="FNAF.html"><p class="Moviesdesc">Five Nights at Freddy's</p></a>
+          <a href="FNAF.php"><img src="fnaf.jpg" class="Movies" alt=""></a>
+        <a href="FNAF.php"><p class="Moviesdesc">Five Nights at Freddy's</p></a>
         </div>
 
         <div class="moviehover">
-          <a href="Halloween.html"><img class="Movies" src="Halloween.jfif" alt=""></a>
-          <a href="Halloween.html"><p class="Moviesdesc">Halloween</p></a>
+          <a href="Halloween.php"><img class="Movies" src="Halloween.jfif" alt=""></a>
+          <a href="Halloween.php"><p class="Moviesdesc">Halloween</p></a>
         </div>
     </div>
      

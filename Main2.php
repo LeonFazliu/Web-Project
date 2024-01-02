@@ -18,15 +18,15 @@
     <body>
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="Main.html" class="logo">Movies24Online</a>
+      <a href="Main.php" class="logo">Movies24Online</a>
 
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
-        <li><a href="Action.html">Action</a></li>
-        <li><a href="Horror.html">Horror</a></li>
-        <li><a href="Comedy.html">Comedy</a></li>
-        <li><a href="Drama.html">Drama</a></li>
-        <li><a href="Fantasy.html">Fantasy</a></li>
+        <li><a href="Action.php">Action</a></li>
+        <li><a href="Horror.php">Horror</a></li>
+        <li><a href="Comedy.php">Comedy</a></li>
+        <li><a href="Drama.php">Drama</a></li>
+        <li><a href="Fantasy.php">Fantasy</a></li>
         
         
       </ul>
@@ -40,85 +40,85 @@
     <div class="Container">
 
       <div class="moviehover">  
-        <a href="leo.html"><img class="Movies" src="leo.jpg" alt=""></a>
-        <a href="leo.html"><p class="Moviesdesc">Leo</p></a>
+        <a href="leo.php"><img class="Movies" src="leo.jpg" alt=""></a>
+        <a href="leo.php"><p class="Moviesdesc">Leo</p></a>
       </div>
       <div class="moviehover">
-        <a href="Gb.html"><img class="Movies" src="ghostbusters.jpg" alt=""></a>
-        <a href="Gb.html"><p class="Moviesdesc">Ghostbusters</p></a>
+        <a href="Gb.php"><img class="Movies" src="ghostbusters.jpg" alt=""></a>
+        <a href="Gb.php"><p class="Moviesdesc">Ghostbusters</p></a>
       </div>
       <div class="moviehover">
-        <a href="Bridesmaids.html"><img class="Movies" src="Bridemaids.jpg" alt=""></a>
-        <a href="Bridesmaids.html"><p class="Moviesdesc">Bridesmaids</p></a>
+        <a href="Bridesmaids.php"><img class="Movies" src="Bridemaids.jpg" alt=""></a>
+        <a href="Bridesmaids.php"><p class="Moviesdesc">Bridesmaids</p></a>
       </div>
       <div class="moviehover">
-        <a href="TheGodFather3.html"><img class="Movies" src="TheGodFather3.jpg" alt=""></a>
-        <a href="TheGodFather3.html"><p class="Moviesdesc">The God Father III</p></a>
+        <a href="TheGodFather3.php"><img class="Movies" src="TheGodFather3.jpg" alt=""></a>
+        <a href="TheGodFather3.php"><p class="Moviesdesc">The God Father III</p></a>
       </div>
       <div class="moviehover">
-        <a href="Scream6.html"><img class="Movies" src="Scream6.jpg" alt=""></a>
-        <a href="Scream6.html"><p class="Moviesdesc">Scream VI</p></a>
+        <a href="Scream6.php"><img class="Movies" src="Scream6.jpg" alt=""></a>
+        <a href="Scream6.php"><p class="Moviesdesc">Scream VI</p></a>
       </div>
     
     </div>
     <div class="Container2">
       <div class="moviehover">
-        <a href="Snatch.html"><img class="Movies" src="Snatch.jpg" alt=""></a>
-        <a href="Snatch.html"><p class="Moviesdesc">Snatch</p></a>
+        <a href="Snatch.php"><img class="Movies" src="Snatch.jpg" alt=""></a>
+        <a href="Snatch.php"><p class="Moviesdesc">Snatch</p></a>
       </div>
       <div class="moviehover">
-        <a href="Rambo.html"><img class="Movies" src="Rambo.jpg" alt=""></a>
-        <a href="Rambo.html"><p class="Moviesdesc">Rambo</p></a>
+        <a href="Rambo.php"><img class="Movies" src="Rambo.jpg" alt=""></a>
+        <a href="Rambo.php"><p class="Moviesdesc">Rambo</p></a>
       </div>
       <div class="moviehover">
-        <a href="AntMan.html"><img class="Movies" src="AntMan.jpg" alt=""></a>
-        <a href="AntMan.html"><p class="Moviesdesc">Ant-Man</p></a>
+        <a href="AntMan.php"><img class="Movies" src="AntMan.jpg" alt=""></a>
+        <a href="AntMan.php"><p class="Moviesdesc">Ant-Man</p></a>
       </div>
       <div class="moviehover">
-        <a href="TheNun.html"><img class="Movies" src="TheNun.jpg" alt=""></a>
-        <a href="TheNun.html"><p class="Moviesdesc">The Nun</p></a>
+        <a href="TheNun.php"><img class="Movies" src="TheNun.jpg" alt=""></a>
+        <a href="TheNun.php"><p class="Moviesdesc">The Nun</p></a>
         </div>
       <div class="moviehover">
-        <a href="TheHungerGames.html"><img class="Movies" src="TheHungerGames.jpg"></a>
-        <a href="TheHungerGames.html"><p class="Moviesdesc">The Hunger Games</p></a>
+        <a href="TheHungerGames.php"><img class="Movies" src="TheHungerGames.jpg"></a>
+        <a href="TheHungerGames.php"><p class="Moviesdesc">The Hunger Games</p></a>
       </div>
     </div>
     <div class="Container3">
 
       <div class="moviehover">
-        <a href="Mask.html"><img class="Movies" src="Mask.jpg" alt=""></a>
-        <a href="Mask.html"><p class="Moviesdesc">Mask</p></a>
+        <a href="Mask.php"><img class="Movies" src="Mask.jpg" alt=""></a>
+        <a href="Mask.php"><p class="Moviesdesc">Mask</p></a>
       </div>
 
       <div class="moviehover">
-        <a href="JohnnyEnglish.html"><img src="JohnnyEnglish.jpg" class="Movies" alt=""></a>
-        <a href="JohnnyEnglish.html"><p class="Moviesdesc">Johnny English Reborn</p></a>
+        <a href="JohnnyEnglish.php"><img src="JohnnyEnglish.jpg" class="Movies" alt=""></a>
+        <a href="JohnnyEnglish.php"><p class="Moviesdesc">Johnny English Reborn</p></a>
       </div>
 
       <div class="moviehover">
-        <a href="BlackPanther.html"><img src="BlackPanther.jpg" class="Movies" alt=""></a>
-        <a href="BlackPanther.html"><p class="Moviesdesc">Black Panther</p></a>
+        <a href="BlackPanther.php"><img src="BlackPanther.jpg" class="Movies" alt=""></a>
+        <a href="BlackPanther.php"><p class="Moviesdesc">Black Panther</p></a>
       </div>
 
       <div class="moviehover">
-        <a href="TheBabyBoss2.html"><img src="TheBabyboss2.jpg" class="Movies" alt=""></a>
-        <a href="TheBabyBoss2.html"><p class="Moviesdesc">The Baby Boss 2</p></a>
+        <a href="TheBabyBoss2.php"><img src="TheBabyboss2.jpg" class="Movies" alt=""></a>
+        <a href="TheBabyBoss2.php"><p class="Moviesdesc">The Baby Boss 2</p></a>
       </div>
       
       <div class="moviehover">
-        <a href="IronMan.html"><img src="IronMan.jpg" class="Movies" alt=""></a>
-        <a href="IronMan.html"><p class="Moviesdesc">Iron Man</p></a>
+        <a href="IronMan.php"><img src="IronMan.jpg" class="Movies" alt=""></a>
+        <a href="IronMan.php"><p class="Moviesdesc">Iron Man</p></a>
       </div>
 
     </div>
     <footer>
 
       <ul class="pagination">
-        <li class="icon"><a href="Main.html">
+        <li class="icon"><a href="Main.php">
            <span class="fas fa-angle-left"></span>
            Previous</a>
         </li>
-        <li><a href="Main.html">1</a></li>
+        <li><a href="Main.php">1</a></li>
         <li><a href="">2</a></li>
         <li class="icon"><a href="">
            Next<span class="fas fa-angle-right"></span>

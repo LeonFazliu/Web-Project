@@ -65,23 +65,8 @@ a {
   opacity: 1;
   pointer-events: auto;
 }
-.search-box .search-icon {
-  position: absolute;
-  left: 15px;
-  top: 50%;
-  left: 15px;
-  color: #4a98f7;
-  transform: translateY(-50%);
-}
-.search-box input {
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-radius: 6px;
-  background-color: #fff;
-  padding: 0 15px 0 45px;
-}
+
+
 
 .nav .navOpenBtn,
 .nav .navCloseBtn {
@@ -396,7 +381,7 @@ align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
-    .Container, .Container2, .Container3 {
+    .Container-mainpage1, .Container, .Container2, .Container3 {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -406,6 +391,9 @@ align-items: center;
     .Movies {
       height: auto;
       max-width: 100%;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      z-index: 100;
   }
   
   .SuggMovies {

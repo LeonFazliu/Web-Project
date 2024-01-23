@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +14,11 @@ body {
 .nav {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100%;
   padding: 15px 200px;
   background: #4a98f7;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 10;
 }
 .nav,
 .nav .nav-links {
@@ -33,7 +35,6 @@ a {
 .nav .logo {
   font-size: 22px;
   font-weight: 500;
-  
 }
 .nav .nav-links {
   column-gap: 20px;
@@ -65,13 +66,28 @@ a {
   opacity: 1;
   pointer-events: auto;
 }
-
-
-
+.search-box .search-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  left: 15px;
+  color: #4a98f7;
+  transform: translateY(-50%);
+}
+.search-box input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #fff;
+  padding: 0 15px 0 45px;
+}
 .nav .navOpenBtn,
 .nav .navCloseBtn {
   display: none;
 }
+
 .product {
   position: relative;
   overflow: hidden;

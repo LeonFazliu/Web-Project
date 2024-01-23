@@ -27,10 +27,14 @@
         <li><a href="Horror.php">Horror</a></li>
         <li><a href="Comedy.php">Comedy</a></li>
         <li><a href="Drama.php">Drama</a></li>
-        <li><a href="Fantasy.php">Fantasy</a></li>    
+        <li><a href="Fantasy.php">Fantasy</a></li>
+        
       </ul>
+      
+      
 
-      <a href="logreg.php"><i>Log in</i></a>
+      <i classs="uil uil-search search-icon" id="searchIcon"></i>
+      
     </nav>
     
     <section class="product"> 

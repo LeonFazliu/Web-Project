@@ -11,34 +11,39 @@ $conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
 if ($conn->connect_error) {
     die("Lidhja me bazën e të dhënave ka dështuar: " . $conn->connect_error);
 }
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST["username"]) && isset($_POST["password"])) {
     $username = $_POST["username"];
-    $password = $_POST["password"];
+    $password = $_POST["password"]; 
+ // Kërkesa SQL për admin
+ $selectAdminQuery = "SELECT * FROM admin WHERE username = '$username'";
 
-    $selectUserQuery = "SELECT * FROM users WHERE username = '$username'";
-    $result = $conn->query($selectUserQuery);
+ // Kërkesa SQL për përdorues
+ $selectUserQuery = "SELECT * FROM users WHERE username = '$username'";
 
-    if ($result->num_rows == 1) {
-        $row = $result->fetch_assoc();
-        if (password_verify($password, $row["password"])) {
-            $_SESSION["username"] = $username;
-            $_SESSION["role"] = $row["role"];
+ // Kombinimi i dy kërkesave me UNION
+ $finalQuery = "($selectAdminQuery) UNION ($selectUserQuery)";
 
-            if ($_SESSION["role"] === "admin") {
-                header("Location: admin_dashboard.php");
-            } else {
-                header("Location: index.php");
-            }
-        } else {
-            echo "Fjalëkalimi i pasaktë!";
-        }
-    } else {
-        // Përdoruesi nuk ekziston, ofron mundësinë për regjistrim
-        echo "Përdoruesi nuk ekziston. <a href='register.php'>Regjistrohu këtu</a>.";
-    }
+ $result = $conn->query($finalQuery);
+
+ if ($result->num_rows == 1) {
+     $row = $result->fetch_assoc();
+     if (password_verify($password, $row["password"])) {
+         $_SESSION["username"] = $username;
+         $_SESSION["role"] = $row["role"];
+
+         if ($_SESSION["role"] === "admin") {
+             header("Location: admin_dashboard.php");
+         } else {
+             header("Location: user_dashboard.php");
+         }
+     } else {
+         echo "Fjalëkalimi i pasaktë!";
+     }
+ } else {
+     // Përdoruesi nuk ekziston, ofron mundësinë për regjistrim
+     echo "Përdoruesi nuk ekziston. <a href='register.php'>Regjistrohu këtu</a>.";
+ }
 }
-
 $conn->close();
 ?>
 

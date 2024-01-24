@@ -20,7 +20,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
 
     if ($role == "admin") {
-        $insertAdminQuery = "INSERT INTO admin (admin_name, password) VALUES ('$username', '$hashedPassword')";
+        $insertAdminQuery = "INSERT INTO admin (username, password, role) VALUES ('$username', '$hashedPassword', '$role')";
         if ($conn->query($insertAdminQuery) === TRUE) {
             echo "Regjistrimi i adminit u krye me sukses!";
         } else {

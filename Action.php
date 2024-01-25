@@ -24,36 +24,32 @@
         <li><a href="Fantasy.php">Fantasy</a></li>
       </ul>
 
-      <i class="uil uil-search search-icon" id="searchIcon"></i>
-      <div class="search-box">
-        <i class="uil uil-search search-icon"></i>
-        <input type="text" placeholder="Search here..." />
-      </div>
+      
     </nav>
 
     <div class="Container">
 
-      <div class="moviehover">
+      <div class="moviehovering">
         <a href="Spiderman.php"><img class="Movies" src="Spider-Man-_Across_the_Spider-Verse_poster.jpg" alt=""></a>
         <a href="Spiderman.php"><p class="Moviesdesc">Spider-Man</p></a>
       </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="AvengersEndGame.php"><img class="Movies" src="Avengers.jpg" alt=""></a>
           <a href="AvengersEndGame.php"><p class="Moviesdesc">Avengers End Game</p></a>
         </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="JohnWick3.php"><img class="Movies" src="JW3.jpg" alt=""></a>
           <a href="Johnwick3.php"><p class="Moviesdesc">John Wick 3</p></a>
         </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="TheGodFather3.php"><img class="Movies" src="TheGodFather3.jpg" alt=""></a>
           <a href="TheGodFather3.php"><p class="Moviesdesc">The God Father III</p></a>
         </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
         <a href="IronMan.php"><img src="IronMan.jpg" class="Movies" alt=""></a>
         <a href="IronMan.php"><p class="Moviesdesc">Iron Man</p></a>
         </div>
@@ -62,27 +58,27 @@
 
       <div class="Container2">
 
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="JohnWick4.php"><img class="Movies" src="JW4.jpg" alt=""></a>
           <a href="JohnWick4.php"><p class="Moviesdesc">John Wick 4</p></a>
         </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
         <a href="XmenApocalypse.php"><img class="Movies" src="XmenApocalypse.jpg" alt=""></a>
         <a href="XmenApocalypse.php"><p class="Moviesdesc" >X-Men Apocalypse</p></a>
         </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="TheEqualizer3.php"><img src="The Equalizer.jpg" class="Movies" alt=""></a>
           <a href="TheEqualizer3.php"><p class="Moviesdesc">The Equalizer 3</p></a>
         </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="Rambo.php"><img class="Movies" src="Rambo.jpg" alt=""></a>
           <a href="Rambo.php"><p class="Moviesdesc">Rambo</p></a>
         </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="AntMan.php"><img class="Movies" src="AntMan.jpg" alt=""></a>
           <a href="AntMan.php"><p class="Moviesdesc">Ant-Man</p></a>
         </div>

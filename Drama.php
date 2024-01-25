@@ -24,33 +24,29 @@
         <li><a href="Fantasy.php">Fantasy</a></li>
       </ul>
 
-      <i class="uil uil-search search-icon" id="searchIcon"></i>
-      <div class="search-box">
-        <i class="uil uil-search search-icon"></i>
-        <input type="text" placeholder="Search here..." />
-      </div>
+      
     </nav>
     <div class="Container">
 
 
-        <div class="moviehover">
+        <div class="moviehovering">
          <a href="PinkPanther.php"><img class="Movies" src="PP.jpg"></a>
          <a href="PinkPanther.php"><p class="Moviesdesc">Pink Panther</p></a>
         </div>
 
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="Titanic.php"><img class="Movies" src="Titanic.jpg" alt=""></a>
           <a href="Titanic.php"><p class="Moviesdesc">Titanic</p></a>
         </div>
-        <div class="moviehover">
+        <div class="moviehovering">
           <a href="Moonlight.php"><img class="Movies" src="Moonlights.jfif" alt=""></a>
           <a href="Moonlight.php"><p class="Moviesdesc">MoonLight</p></a>
         </div>
-          <div class="moviehover">
+          <div class="moviehovering">
             <a href="Bridesmaids.php"><img class="Movies" src="Bridemaids.jpg" alt=""></a>
             <a href="Bridesmaids.php"><p class="Moviesdesc">Bridesmaids</p></a>
           </div>
-          <div class="moviehover">
+          <div class="moviehovering">
             <a href="TheGodFather3.php"><img class="Movies" src="TheGodFather3.jpg" alt=""></a>
             <a href="TheGodFather3.php"><p class="Moviesdesc">The God Father III</p></a>
         </div>

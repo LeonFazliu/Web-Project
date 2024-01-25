@@ -2,6 +2,7 @@ const nav = document.querySelector(".nav"),
   searchIcon = document.querySelector("#searchIcon"),
   navOpenBtn = document.querySelector(".navOpenBtn"),
   navCloseBtn = document.querySelector(".navCloseBtn");
+
 searchIcon.addEventListener("click", () => {
   nav.classList.toggle("openSearch");
   nav.classList.remove("openNav");
@@ -10,24 +11,5 @@ searchIcon.addEventListener("click", () => {
   }
   searchIcon.classList.replace("uil-times", "uil-search");
 });
-navOpenBtn.addEventListener("click", () => {
-  nav.classList.add("openNav");
-  nav.classList.remove("openSearch");
-  searchIcon.classList.replace("uil-times", "uil-search");
-});
-navCloseBtn.addEventListener("click", () => {
-  nav.classList.remove("openNav");
-});
 
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width;
 
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})

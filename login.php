@@ -34,7 +34,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
          if ($_SESSION["role"] === "admin") {
              header("Location: admin_dashboard.php");
          } else {
-             header("Location: user_dashboard.php");
+             header("Location: index.php");
          }
      } else {
          echo "Fjalëkalimi i pasaktë!";

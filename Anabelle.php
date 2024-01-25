@@ -49,7 +49,7 @@
             <br>
             <br>
             <p>Release date- Oct 03,2014</p>
-            
+                       
         </div>
           <div class="footerright">
             <div class="SuggestedParagraph"><h3>Suggested Movies for you</h3></div>

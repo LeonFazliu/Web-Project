@@ -18,15 +18,20 @@
     <body>
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="Main.php" class="logo">Movies24Online</a>
-
+      <a href="index.php" class="logo">Movies24Online</a>
+      
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
         <li><a href="Action.php">Action</a></li>
         <li><a href="Horror.php">Horror</a></li>
         <li><a href="Comedy.php">Comedy</a></li>
         <li><a href="Drama.php">Drama</a></li>
-        <li><a href="Fantasy.php">Fantasy</a></li>        
+        <li><a href="Fantasy.php">Fantasy</a></li>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><a href="logout.php">Log out</a></div>        
       </ul>
 
     </nav>
@@ -124,5 +129,16 @@
 
     
   </body>
+  <style>
+    .moviehovering:hover {
+    transform: scale(1.1);
+    transition: transform 0.9s ease-in-out, box-shadow 0.9s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.nav{
+  z-index: 999;
+}
+  </style>
   </div>
 </html>

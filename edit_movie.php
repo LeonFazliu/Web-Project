@@ -18,7 +18,7 @@ $releaseDate = "";
 $genre = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_GET["id"])) {
-    // Pjesa për procesimin e formës pasi të jetë dorëzuar
+    
     $id = $_GET["id"];
     $title = $_POST["title"];
     $releaseDate = $_POST["release_date"];
@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_GET["id"])) {
         echo "Gabim gjatë ndryshimit të filmi: " . $conn->error;
     }
 } elseif (isset($_GET["id"])) {
-    // Pjesa për marrjen e informacionit të filmit për të treguar në formë
+
     $id = $_GET["id"];
     $selectMovieQuery = "SELECT * FROM filmat WHERE id=$id";
     $result = $conn->query($selectMovieQuery);
@@ -63,7 +63,7 @@ $conn->close();
         <label for="title">Titulli:</label>
         <input type="text" id="title" name="title" value="<?php echo $title; ?>" required>
 
-        <label for="release_date">Data e Lirimit:</label>
+        <label for="release_date">Data e Publikimit:</label>
         <input type="date" id="release_date" name="release_date" value="<?php echo $releaseDate; ?>" required>
 
         <label for="genre">Zhanri:</label>

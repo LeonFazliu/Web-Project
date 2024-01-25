@@ -33,7 +33,7 @@ $result = $conn->query($selectMoviesQuery);
         <tr>
             <th>ID</th>
             <th>Titulli</th>
-            <th>Data e Lirimit</th>
+            <th>Data e Publikimit</th>
             <th>Zhanri</th>
             <th>Veprimet</th>
         </tr>

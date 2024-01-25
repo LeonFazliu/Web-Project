@@ -18,6 +18,8 @@ if (isset($_GET["id"])) {
 
     if ($conn->query($deleteMovieQuery) === TRUE) {
         echo "Filmi u fshi me sukses!";
+        echo '<a href="list_movies.php">Kthehu tek filmat</a>';
+
     } else {
         echo "Gabim gjatë fshirjes së filmi: " . $conn->error;
     }

@@ -34,13 +34,8 @@
         <div></div>
         <div></div>
         <div><a href="logout.php">Log out</a></div>
-        <i class="uilll dfduil-search search-icon" id="searchIcon"></i>
-      <div class="search-sdfbox">
-        <i class="uil ufdsil-search search-isdascon"></i>
-        
-        
-        
       </ul>
+      
     </nav>
     
 
@@ -232,7 +227,8 @@
 
 
 
-* {
+
+    * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -249,7 +245,7 @@ body {
   padding: 15px 200px;
   background: #4a98f7;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 9999;
+  z-index: 999;
 }
 .nav,
 .nav .nav-links {
@@ -329,7 +325,7 @@ a {
   overflow: hidden;
   padding: 20px;
   z-index: 1;
-  margin-top: 1rem;
+  margin-top: 4rem;
 }
 
 .product-category {
@@ -561,7 +557,6 @@ align-items: center;
 
 
 
-/* responsive */
 @media screen and (max-width: 1160px) {
   .nav {
     padding: 15px 100px;
@@ -600,7 +595,7 @@ align-items: center;
     background-color: #11101d;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
-    z-index: 100;
+    z-index: 1000;
   }
   .nav.openNav .nav-links {
     left: 0;
@@ -618,13 +613,7 @@ align-items: center;
     font-size: 20px;
     cursor: pointer;
   }
-  .nav .search-box {
-    top: calc(100% + 10px);
-    max-width: calc(100% - 20px);
-    right: 50%;
-    transform: translateX(50%);
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  }
+  
   
     .Container-mainpage1, .Container, .Container2, .Container3 {
         flex-direction: column;
@@ -655,6 +644,7 @@ align-items: center;
 
   </style>
   <script>
+
     const productContainers = [...document.querySelectorAll('.product-container')];
 const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
 const preBtn = [...document.querySelectorAll('.pre-btn')];
@@ -671,5 +661,22 @@ productContainers.forEach((item, i) => {
         item.scrollLeft -= containerWidth;
     })
 })
+
+
+const nav = document.querySelector(".nav"),
+  searchIcon = document.querySelector("#searchIcon"),
+  navOpenBtn = document.querySelector(".navOpenBtn"),
+  navCloseBtn = document.querySelector(".navCloseBtn");
+
+
+
+navOpenBtn.addEventListener("click", () => {
+  nav.classList.add("openNav");
+  nav.classList.remove("openSearch");
+  searchIcon.classList.replace("uil-times", "uil-search");
+});
+navCloseBtn.addEventListener("click", () => {
+  nav.classList.remove("openNav");
+});
   </script>
 </html>

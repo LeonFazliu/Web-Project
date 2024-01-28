@@ -13,7 +13,7 @@
   <body>
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
-      <a href="Main.php" class="logo">Movies24Online</a>
+      <a href="index.php" class="logo">Movies24Online</a>
 
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
@@ -22,13 +22,12 @@
         <li><a href="Comedy.php">Comedy</a></li>
         <li><a href="Drama.php">Drama</a></li>
         <li><a href="Fantasy.php">Fantasy</a></li>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div><a href="logout.php">Log out</a></div>
       </ul>
-
-      <i class="uil uil-search search-icon" id="searchIcon"></i>
-      <div class="search-box">
-        <i class="uil uil-search search-icon"></i>
-        <input type="text" placeholder="Search here..." />
-      </div>
     </nav>
     <div class="videos-movies">
           <video class="moviesmp4" src="x2mate.com-SPIDER-MAN_ INTO THE SPIDER-VERSE - Official Trailer (HD)-(1080p).mp4" controls></video>

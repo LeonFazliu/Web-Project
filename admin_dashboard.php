@@ -1,15 +1,14 @@
 <?php
 session_start();
 
-// Kontrollo nese perdoruesi eshte kyqur dhe ka rol admin
-// Kontrollo nese perdoruesi eshte kyqur dhe ka rol admin
+
 if (!isset($_SESSION["username"]) || $_SESSION["role"] !== "admin") {
     header("Location: login.php");
     exit();
 }
 ?>
 
-<!-- Në faqen admin_dashboard.php -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,7 +84,7 @@ if (!isset($_SESSION["username"]) || $_SESSION["role"] !== "admin") {
     <div class="dashboard-container">
         <h2 class="welcome-message">Miresevini, <?php echo $_SESSION["username"]; ?>! Ju keni te drejta administratori.</h2>
 
-        <!-- Të tjerë opsione dhe informacione të dashboard-it -->
+        
     </div>
 
 </body>

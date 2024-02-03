@@ -14,13 +14,13 @@ if ($conn->connect_error) {
 if (isset($_POST["username"]) && isset($_POST["password"])) {
     $username = $_POST["username"];
     $password = $_POST["password"]; 
- // Kërkesa SQL për admin
+ 
  $selectAdminQuery = "SELECT * FROM admin WHERE username = '$username'";
 
- // Kërkesa SQL për përdorues
+ 
  $selectUserQuery = "SELECT * FROM users WHERE username = '$username'";
 
- // Kombinimi i dy kërkesave me UNION
+
  $finalQuery = "($selectAdminQuery) UNION ($selectUserQuery)";
 
  $result = $conn->query($finalQuery);
@@ -40,7 +40,7 @@ if (isset($_POST["username"]) && isset($_POST["password"])) {
          echo "Fjalëkalimi i pasaktë!";
      }
  } else {
-     // Përdoruesi nuk ekziston, ofron mundësinë për regjistrim
+
      echo "Përdoruesi nuk ekziston. <a href='register.php'>Regjistrohu këtu</a>.";
  }
 }

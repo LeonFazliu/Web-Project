@@ -22,14 +22,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($role == "admin") {
         $insertAdminQuery = "INSERT INTO admin (username, password, role) VALUES ('$username', '$hashedPassword', '$role')";
         if ($conn->query($insertAdminQuery) === TRUE) {
-            echo "Regjistrimi i adminit u krye me sukses!";
+            header("Location: admin_dashboard.php");
         } else {
             echo "Gabim gjatë regjistrimit të adminit: " . $conn->error;
         }
     } else {
         $insertUserQuery = "INSERT INTO users (username, password, role) VALUES ('$username', '$hashedPassword', '$role')";
         if ($conn->query($insertUserQuery) === TRUE) {
-            echo "Regjistrimi i përdoruesit u krye me sukses!";
+            header("Location: index.php");
         } else {
             echo "Gabim gjatë regjistrimit të përdoruesit: " . $conn->error;
         }

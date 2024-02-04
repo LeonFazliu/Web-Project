@@ -112,11 +112,11 @@
     <footer>
 
       <ul class="pagination">
-        <li class="icon"><a href="Main.php">
+        <li class="icon"><a href="index.php">
            <span class="fas fa-angle-left"></span>
            Previous</a>
         </li>
-        <li><a href="Main.php">1</a></li>
+        <li><a href="index.php">1</a></li>
         <li><a href="">2</a></li>
         <li class="icon"><a href="">
            Next<span class="fas fa-angle-right"></span>

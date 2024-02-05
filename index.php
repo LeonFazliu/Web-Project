@@ -1,3 +1,12 @@
+<?php
+session_start();
+
+
+if (!isset($_SESSION["username"])) {
+    header("Location: login.php");
+    exit();
+}
+?>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -207,7 +216,7 @@
            <span class="fas fa-angle-left"></span>
            Previous</a>
         </li>
-        <li><a href="Main.php">1</a></li>
+        <li><a href="index.php">1</a></li>
         <li><a href="Main2.php">2</a></li>
         <li class="icon"><a href="Main2.php">
            Next<span class="fas fa-angle-right"></span>

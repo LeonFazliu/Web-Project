@@ -290,19 +290,12 @@ a {
   margin-top: 4rem;
 }
 
-.product-category {
-  padding: 0 10vw;
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 40px;
-  text-transform: capitalize;
-}
-
 .product-container {
   padding: 0 10vw;
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
+  
 }
 
 .product-container::-webkit-scrollbar {
@@ -312,7 +305,7 @@ a {
 .product-card {
   flex: 0 0 auto;
   width: 250px;
-  height: 450px;
+  height: 350px;
   margin-right: 40px;
 }
 
@@ -581,11 +574,13 @@ align-items: center;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   
-    .Container-mainpage1, .Container, .Container2, .Container3 {
+  
+  .Container-mainpage1 {
         flex-direction: column;
         align-items: center;
         text-align: center;
         justify-content: center;
+        display: flex;
     }
 
     
@@ -595,9 +590,12 @@ align-items: center;
       margin-top: 1rem;
       margin-bottom: 1rem;
       z-index: 100;
-      margin-left: 50%;
-      
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
   }
+      
+  
   
   .SuggMovies {
       height: auto;
@@ -607,7 +605,7 @@ align-items: center;
     flex-direction: column;
     align-items: center;
 }
-}
+
 
   </style>
   <script>

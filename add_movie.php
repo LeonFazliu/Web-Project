@@ -16,13 +16,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $title = $_POST["title"];
     $releaseDate = $_POST["release_date"];
     $genre = $_POST["genre"];
+    $filename = $_POST["filename"];
 
     $createdBy = $_SESSION["username"];
 
-    $insertMovieQuery = "INSERT INTO filmat (title, release_date, genre, created_by) VALUES ('$title', '$releaseDate', '$genre', '$createdBy')";
+    $insertMovieQuery = "INSERT INTO filmat (title, release_date, genre, created_by, filename) VALUES ('$title', '$releaseDate', '$genre', '$createdBy','$filename')";
 
     if ($conn->query($insertMovieQuery) === TRUE) {
-        echo "Filmi u shtua me sukses nga admini: $createdBy";
+        header("Location: index.php");
+        exit();
     } else {
         echo "Gabim gjatë shtimit të filmi: " . $conn->error;
     }
@@ -37,7 +39,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shto Film</title>
-
 </head>
 <body>
     <h2>Shto Film</h2>
@@ -46,7 +47,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a href="list_movies.php">Shiko Filmat</a>
     </nav>
     <form action="add_movie.php" method="post">
-
     <label for="title">Titulli:</label>
         <input type="text" id="title" name="title" required>
 
@@ -56,11 +56,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <label for="genre">Zhanri:</label>
         <input type="text" id="genre" name="genre" required>
 
+        <label for="genre">Filename:</label>
+        <input type="text" id="filename" name="filename" required>
+
         <button type="submit">Shto Film</button>
     </form>
 
     <style>
-          body {
+             body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -126,6 +129,5 @@ button:hover {
     background-color: #45a049;
 }
     </style>
-
 </body>
 </html>

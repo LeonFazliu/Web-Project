@@ -1,11 +1,24 @@
 <?php
 session_start();
 
+$servername = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbname = "filmatDB";
+
+$conn = new mysqli($servername, $dbUsername, $dbPassword, $dbname);
+
+if ($conn->connect_error) {
+    die("Lidhja me bazën e të dhënave ka dështuar: " . $conn->connect_error);
+}
 
 if (!isset($_SESSION["username"])) {
-    header("Location: login.php");
-    exit();
+  header("Location: login.php");
+  exit();
 }
+
+$getMoviesQuery = "SELECT * FROM filmat";
+$result = $conn->query($getMoviesQuery);
 ?>
 <!DOCTYPE html>
 
@@ -127,88 +140,27 @@ if (!isset($_SESSION["username"])) {
 </div>
     
 
+           
 
     
-    
-    
-    <div class="Container-mainpage1">
-
-      <div class="moviehovering">  
-        <a href="Spiderman.php"><img class="Movies" src="Spider-Man-_Across_the_Spider-Verse_poster.jpg" alt=""></a>
-        <a href="Spiderman.php"><p class="Moviesdesc">Spider-Man</p></a>
-      </div>
-      <div class="moviehovering">
-        <a href="Halloween.php"><img class="Movies" src="Halloween.jfif" alt=""></a>
-        <a href="Halloween.php"><p class="Moviesdesc">Halloween</p></a>
-      </div>
-      <div class="moviehovering">
-        <a href="DumbandDumber.php"><img class="Movies" src="Dumbanddumber.jfif" alt=""></a>
-        <a href="DumandDumber.php"><p class="Moviesdesc">Dumb and Dumber</p></a>
-      </div>
-      <div class="moviehovering">
-        <a href="Titanic.php"><img class="Movies" src="Titanic.jpg" alt=""></a>
-        <a href="Titanic.php"><p class="Moviesdesc">Titanic</p></a>
-      </div>
-      <div class="moviehovering">
-        <a href="AvengersEndGame.php"><img class="Movies" src="Avengers.jpg" alt=""></a>
-        <a href="AvengersEndGame.php"><p class="Moviesdesc">Avengers End Game</p></a>
-      </div>
-    
-    </div>
-    <div class="Container2">
-      <div class="moviehovering">
-        <a href="JohnWick3.php"><img class="Movies" src="JW3.jpg" alt=""></a>
-        <a href="Johnwick3.php"><p class="Moviesdesc">John Wick 3</p></a>
-      </div>
-      <div class="moviehovering">
-        <a href="JohnWick4.php"><img class="Movies" src="JW4.jpg" alt=""></a>
-        <a href="JohnWick4.php"><p class="Moviesdesc">John Wick 4</p></a>
-      </div>
-      <div class="moviehovering">
-        <a href="Anabelle.php"><img class="Movies" src="Anabelle.jpg" alt=""></a>
-        <a href="Anabelle.php"><p class="Moviesdesc">Anabelle</p></a>
-      </div>
-      <div class="moviehovering">
-        <a href="Moonlight.php"><img class="Movies" src="Moonlights.jfif" alt=""></a>
-          <a href="Moonlight.php"><p class="Moviesdesc">MoonLight</p></a>
-        </div>
-      <div class="moviehovering">
-        <a href="PinkPanther.php"><img class="Movies" src="PP.jpg"></a>
-        <a href="PinkPanther.php"><p class="Moviesdesc">Pink Panther</p></a>
-      </div>
-    </div>
-    <div class="Container3">
-
-      <div class="moviehovering">
-        <a href="XmenApocalypse.php"><img class="Movies" src="XmenApocalypse.jpg" alt=""></a>
-        <a href="XmenApocalypse.php"><p class="Moviesdesc" >X-Men Apocalypse</p></a>
-      </div>
-
-      <div class="moviehovering">
-        <a href="TexasChainsaw.php"><img src="TexasCh.jfif" class="Movies" alt=""></a>
-        <a href="TexasChainsaw.php"><p class="Moviesdesc">Texas Chainsaw 3D</p></a>
-      </div>
-
-      <div class="moviehovering">
-        <a href="Barbie.php"><img src="Barbie.jpg" class="Movies" alt=""></a>
-        <a href="Barbie.php"><p class="Moviesdesc">Barbie</p></a>
-      </div>
-
-      <div class="moviehovering">
-        <a href="TheEqualizer3.php"><img src="The Equalizer.jpg" class="Movies" alt=""></a>
-        <a href="TheEqualizer3.php"><p class="Moviesdesc">The Equalizer 3</p></a>
-      </div>
+<div class="Container-mainpage1">
+        <?php
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                
+              
+              echo '<div class="moviehovering">
+                      <a href="'.$row["filename"].'"><img class="Movies" src="' . $row["cover_image"] . '" alt=""></a>
+                      <a href="'.$row["filename"].'"><p class="Moviesdesc">'.$row["title"].'</p></a>
+                    </div>';
+              
+            }
+        } else {
+            echo "Nuk ka filme në disponim.";
+        }
       
-      <div class="moviehovering">
-        <a href="FNAF.php"><img src="fnaf.jpg" class="Movies" alt=""></a>
-        <a href="FNAF.php"><p class="Moviesdesc">Five Nights at Freddy's</p></a>
-      </div>
-      
-      
+        ?>
     </div>
-   
-
-
     <footer>
 
       <ul class="pagination">
@@ -246,6 +198,7 @@ if (!isset($_SESSION["username"])) {
 body {
   background: #f0faff;
 }
+
 .nav {
   position: fixed;
   top: 0;
@@ -326,7 +279,7 @@ a {
 .moviehovering:hover {
     transform: scale(1.1);
     transition: transform 0.9s ease-in-out, box-shadow 0.9s ease-in-out;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    
 }
 
 .product {
@@ -443,19 +396,16 @@ a {
 
 
 .Container-mainpage1{
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  align-content: space-evenly;
-  
+ 
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: space-between;
 }
 .Container{
-    margin-top: 6rem;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -491,6 +441,7 @@ a {
   position: relative;
   height: 300px;
   width: 200px;
+  margin-top: 2rem;
   
   
 }
@@ -604,7 +555,7 @@ align-items: center;
     background-color: #11101d;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: all 0.4s ease;
-    z-index: 1000;
+    z-index: 100;
   }
   .nav.openNav .nav-links {
     left: 0;
@@ -622,12 +573,19 @@ align-items: center;
     font-size: 20px;
     cursor: pointer;
   }
-  
+  .nav .search-box {
+    top: calc(100% + 10px);
+    max-width: calc(100% - 20px);
+    right: 50%;
+    transform: translateX(50%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
   
     .Container-mainpage1, .Container, .Container2, .Container3 {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-content: center;
     }
 
     
@@ -637,6 +595,8 @@ align-items: center;
       margin-top: 1rem;
       margin-bottom: 1rem;
       z-index: 100;
+      margin-left: 50%;
+      
   }
   
   .SuggMovies {
@@ -647,8 +607,6 @@ align-items: center;
     flex-direction: column;
     align-items: center;
 }
-  
-
 }
 
   </style>
